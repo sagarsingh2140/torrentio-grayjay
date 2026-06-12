@@ -1,0 +1,49 @@
+{
+  "name": "Torrentio",
+  "description": "Search and stream Movies & TV shows via Torrentio.",
+  "author": "Community",
+  "authorUrl": "https://torrentio.strem.fun",
+  "platformUrl": "https://torrentio.strem.fun",
+  "version": 1,
+  "iconUrl": "https://torrentio.strem.fun/favicon.ico",
+  "id": "com.torrentio.grayjay",
+  "scriptUrl": "./torrentio.js",
+  "allowUrls": [
+    "https://torrentio.strem.fun",
+    "https://v3-cinemeta.strem.io"
+  ],
+  "settings": [
+    {
+      "variable": "debridProvider",
+      "name": "Debrid Provider",
+      "description": "Pick your Debrid service for fast cached streams",
+      "type": "dropdown",
+      "default": "none",
+      "options": [
+        { "value": "none",       "label": "None (Direct Torrents)" },
+        { "value": "realdebrid", "label": "Real-Debrid" },
+        { "value": "alldebrid",  "label": "AllDebrid" },
+        { "value": "premiumize", "label": "Premiumize" },
+        { "value": "torbox",     "label": "TorBox" }
+      ]
+    },
+    {
+      "variable": "debridApiKey",
+      "name": "Debrid API Key",
+      "description": "Paste your API key from your Debrid provider (leave blank if none)",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "variable": "sortOrder",
+      "name": "Sort Streams By",
+      "type": "dropdown",
+      "default": "quality",
+      "options": [
+        { "value": "quality",  "label": "Quality then Seeders" },
+        { "value": "seeders",  "label": "Most Seeders" },
+        { "value": "size",     "label": "Largest File" }
+      ]
+    }
+  ]
+}
