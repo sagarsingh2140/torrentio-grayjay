@@ -7,7 +7,7 @@
   "version": 1,
   "iconUrl": "https://torrentio.strem.fun/favicon.ico",
   "id": "com.torrentio.grayjay",
-  "scriptUrl": "./torrentio.js",
+  "scriptUrl":"scriptUrl": "https://sagarsingh2140.github.io/torrentio-grayjay/torrentio.js",
   "allowUrls": [
     "https://torrentio.strem.fun",
     "https://v3-cinemeta.strem.io"
